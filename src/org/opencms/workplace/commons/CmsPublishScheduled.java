@@ -44,6 +44,7 @@ import org.opencms.security.CmsRole;
 import org.opencms.util.CmsDateUtil;
 import org.opencms.util.CmsStringUtil;
 import org.opencms.util.CmsUUID;
+import org.opencms.widgets.CmsCalendarWidget;
 import org.opencms.workplace.CmsDialog;
 import org.opencms.workplace.CmsWorkplace;
 import org.opencms.workplace.CmsWorkplaceAction;
@@ -263,9 +264,8 @@ public class CmsPublishScheduled extends CmsDialog {
         String userName = getCms().getRequestContext().getCurrentUser().getName();
 
         // get the java date format
-        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT, getLocale());
-        Date date = dateFormat.parse(publishScheduledDate);
-
+        // Using Calender's default format instead.
+        Date date = new Date(CmsCalendarWidget.getCalendarDate(getMessages(), publishScheduledDate, true));
         // check if the selected date is in the future
         if (date.getTime() < new Date().getTime()) {
             // the selected date in in the past, this is not possible
