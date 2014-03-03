@@ -1134,7 +1134,7 @@ function displayHead(doc, pages, actpage){
    + btUp
 
    + buttonSep(5, 5, 1)
-   + "<td>"+vr.langadress+"&nbsp;</td>\n"
+   + "<td style=\"white-space:nowrap\">"+vr.langadress+"&nbsp;</td>\n"
    + "<td width=\"100%\"><input value=\"\" maxlength=\"255\" name=\"resource\" class=\"location\"></td>\n"
    + pageSelect
 
