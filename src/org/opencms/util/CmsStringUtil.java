@@ -248,6 +248,8 @@ public final class CmsStringUtil {
         source = CmsStringUtil.substitute(source, "\'", "\\\'");
         source = CmsStringUtil.substitute(source, "\r\n", "\\n");
         source = CmsStringUtil.substitute(source, "\n", "\\n");
+        // to avoid XSS (closing script tags) in embedded Javascript 
+        source = CmsStringUtil.substitute(source, "/", "\\/");
         return source;
     }
 
@@ -1088,7 +1090,7 @@ public final class CmsStringUtil {
      * This is the form of the String that had to be written into source code 
      * using the unicode escape sequence for special characters. <p> 
      * 
-     * Example: "Ä" would be transformed to "\\u00C4".<p>
+     * Example: "ï¿½" would be transformed to "\\u00C4".<p>
      * 
      * @param s a string that may contain non-ascii characters 
      * 

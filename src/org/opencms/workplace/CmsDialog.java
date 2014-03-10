@@ -33,6 +33,7 @@ package org.opencms.workplace;
 
 import org.opencms.file.CmsResource;
 import org.opencms.file.CmsResourceFilter;
+import org.opencms.i18n.CmsEncoder;
 import org.opencms.i18n.CmsMessageContainer;
 import org.opencms.jsp.CmsJspActionElement;
 import org.opencms.lock.CmsLockFilter;
@@ -860,7 +861,14 @@ public class CmsDialog extends CmsToolDialog {
      */
     public String dialogHead(String title) {
 
-        return "<div class=\"dialoghead\" unselectable=\"on\">" + (title == null ? "" : title) + "</div>";
+        String escapedTitle;
+        if (title == null) {
+            escapedTitle = "";
+        } else {
+            escapedTitle = CmsEncoder.escapeHtml(title);
+        }
+
+        return "<div class=\"dialoghead\" unselectable=\"on\">" + escapedTitle + "</div>";
     }
 
     /**
