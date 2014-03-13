@@ -105,6 +105,32 @@ public abstract class CmsTabDialog extends CmsDialog {
     }
 
     /**
+     * The number of pixels is calculated from a character string.
+     * 
+     * @param value the target string
+     * 
+     * @return The calculated number of pixels.
+     */
+    private int caluculateNumberOfPixels(String value) {
+    	int halfCount = 0;
+    	int fullCount = 0;
+    	if (value == null || "".equals(value)) {
+    		return 10;
+    	}
+    	for (int i = 0; i < value.length(); i++) {
+    		if(CmsStringUtil.isFullwidthCharacterOnly(String.valueOf(value.charAt(i)))) {
+    			fullCount++;
+    		} else {
+    			halfCount++;
+    		}
+    	}
+    	halfCount = halfCount * 8;
+    	fullCount = fullCount * 12;
+    	
+    	return halfCount + fullCount;
+    }
+
+    /**
      * Builds the tab content area of the dialog window.<p>
      * 
      * @param segment the HTML segment (START / END)
@@ -165,7 +191,7 @@ public abstract class CmsTabDialog extends CmsDialog {
 
         return dialogTabContent(HTML_START, title, attributes);
     }
-
+    
     /**
      * Builds the html for the tab row of the tab dialog.<p>
      * 
@@ -205,7 +231,7 @@ public abstract class CmsTabDialog extends CmsDialog {
                 }
                 result.append(">");
                 result.append("<span class=\"tabactive\" unselectable=\"on\"");
-                result.append(" style=\"width: " + ((curTab.length() * 8) + addDelta) + "px;\"");
+                result.append(" style=\"width: " + ((caluculateNumberOfPixels(curTab)) + addDelta) + "px;\"");
                 result.append(">");
                 result.append(curTab);
                 result.append("</span></td>\n");
@@ -214,7 +240,7 @@ public abstract class CmsTabDialog extends CmsDialog {
                 // create an inactive tab
                 result.append("\t<td class=\"dialogtab\" unselectable=\"on\">");
                 result.append("<a class=\"tab\" href=\"" + curTabLink + "\"");
-                result.append(" style=\"width: " + (curTab.length() * 8) + "px;\"");
+                result.append(" style=\"width: " + (caluculateNumberOfPixels(curTab)) + "px;\"");
                 result.append(">");
                 result.append(curTab);
                 result.append("</a></td>\n");

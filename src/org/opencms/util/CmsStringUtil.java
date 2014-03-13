@@ -1969,5 +1969,20 @@ public final class CmsStringUtil {
         Matcher matcher = pattern.matcher(value);
         return matcher.matches();
     }
-
+    
+    /**
+     * The specified character string judges only in a full-width character.
+     *
+     * @param value the target string
+     * @return <code>true</code> Only full-width character.In the case of empty, it is always set to true.
+     */
+    public static boolean isFullwidthCharacterOnly(String value) {
+        if (value == null || "".equals(value)) {
+            return true;
+        }
+        String regText = "[^ -~｡-ﾟ]+";
+        Pattern pattern = Pattern.compile(regText);
+        return pattern.matcher(value).matches();
+    }
+    
 }
