@@ -7,13 +7,13 @@ targetCompatibility = java_target_version
 version = version_number
 buildDir = build_directory
 repositories {
-    mavenLocal()
     if (project.hasProperty('additional_repositories')){
         additional_repositories.split(';').each{ repo ->
             maven { url repo }
         }
     }
     mavenCentral()
+	mavenLocal() // mavenLocal should come after mavenCentral: http://forums.gradle.org/gradle/topics/gradle_fails_to_download_dependencies_if_not_present_in_mavenlocal
 }
 
 if (!project.hasProperty('max_heap_size')){
@@ -1260,4 +1260,5 @@ install {
 // fixed issue with libraries containing both .java and .class files
 tasks.withType(JavaCompile) {
     options.compilerArgs += ["-sourcepath", ""]
+    options.encoding = 'UTF-8'
 }
