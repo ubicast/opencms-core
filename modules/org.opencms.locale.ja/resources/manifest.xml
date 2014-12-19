@@ -1,0 +1,4436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<export>
+	<info>
+		<creator>Admin</creator>
+		<opencms_version>9.5.0</opencms_version>
+		<createdate>Wed, 10 Dec 2014 09:34:17 GMT</createdate>
+		<infoproject>Offline</infoproject>
+		<export_version>7</export_version>
+	</info>
+	<module>
+		<name>org.opencms.locale.ja</name>
+		<nicename><![CDATA[OpenCms 9.5 Japanese localization for the workplace]]></nicename>
+		<group>OpenCms Localization</group>
+		<class/>
+		<description><![CDATA[Description]]></description>
+		<version>9.5</version>
+		<authorname><![CDATA[ubicast Co., Ltd.]]></authorname>
+		<authoremail><![CDATA[info@ubicast.com]]></authoremail>
+		<datecreated/>
+		<userinstalled/>
+		<dateinstalled/>
+		<dependencies/>
+		<exportpoints>
+			<exportpoint uri="/system/workplace/locales/ja/messages/" destination="WEB-INF/classes/"/>
+		</exportpoints>
+		<resources>
+			<resource uri="/system/workplace/locales/ja/messages/"/>
+			<resource uri="/system/shared/templatecontexts.json"/>
+			<resource uri="/system/modules/org.opencms.ade.config/classes/org/opencms/ade/config/workplace_ja.properties"/>
+			<resource uri="/system/modules/com.alkacon.bootstrap.schemas/elementviews/layout.xml"/>
+			<resource uri="/system/modules/com.alkacon.bootstrap.schemas/elementviews/template.xml"/>
+			<resource uri="/system/modules/com.alkacon.opencms.documentation/elementviews/editor-view.xml"/>
+			<resource uri="/system/workplace/resources/components/js_calendar/lang/calendar-jp.js"/>
+		</resources>
+		<parameters/>
+	</module>
+	<files>
+		<file>
+			<destination>system</destination>
+			<type>folder</type>
+			<uuidstructure>53907911-800b-11e4-a31e-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 01:24:46 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 01:24:46 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>1</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/workplace</destination>
+			<type>folder</type>
+			<uuidstructure>825afce2-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[UTF-8]]></value>
+				</property>
+				<property>
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+				<property>
+					<name>login-form</name>
+					<value><![CDATA[/system/login/index.html]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ALL_OTHERS</uuidprincipal>
+					<flags>134</flags>
+					<permissionset>
+						<allowed>0</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>518</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/workplace/locales</destination>
+			<type>folder</type>
+			<uuidstructure>82b7ea68-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja</destination>
+			<type>folder</type>
+			<uuidstructure>ee1210e6-747e-11e4-a5fa-9ca3ba241563</uuidstructure>
+			<datelastmodified>Tue, 25 Nov 2014 08:42:50 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 25 Nov 2014 08:42:03 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages</destination>
+			<type>folder</type>
+			<uuidstructure>f8cbbb88-747e-11e4-a5fa-9ca3ba241563</uuidstructure>
+			<datelastmodified>Tue, 25 Nov 2014 08:42:21 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 25 Nov 2014 08:42:21 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org</destination>
+			<type>folder</type>
+			<uuidstructure>aeda7496-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms</destination>
+			<type>folder</type>
+			<uuidstructure>aedb8608-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade</destination>
+			<type>folder</type>
+			<uuidstructure>aedc977a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/configuration</destination>
+			<type>folder</type>
+			<uuidstructure>aedda8ec-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/configuration/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/configuration/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aedf087e-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aedf087f-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/containerpage</destination>
+			<type>folder</type>
+			<uuidstructure>aee06811-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/containerpage/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/containerpage/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aee215c3-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aee215c4-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/containerpage/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/containerpage/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aee54a16-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aee54a17-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/contenteditor</destination>
+			<type>folder</type>
+			<uuidstructure>aee6a9a9-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/contenteditor/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/contenteditor/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aee8093b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aee8093c-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/detailpage</destination>
+			<type>folder</type>
+			<uuidstructure>aee968ce-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/detailpage/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/detailpage/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aeeac860-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aeeac861-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/galleries</destination>
+			<type>folder</type>
+			<uuidstructure>aeec27f3-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/galleries/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/galleries/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aeed8785-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aeed8786-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/galleries/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/galleries/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aeef0e28-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aeef0e29-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/postupload</destination>
+			<type>folder</type>
+			<uuidstructure>aef06dbb-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/postupload/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/postupload/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aef1cd4d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aef1cd4e-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/postupload/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/postupload/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aef353f0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aef353f1-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/publish</destination>
+			<type>folder</type>
+			<uuidstructure>aef4b383-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/publish/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/publish/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aef61315-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aef61316-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/publish/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/publish/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aef7c0c8-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aef7c0c9-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/sitemap</destination>
+			<type>folder</type>
+			<uuidstructure>aef9476b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/sitemap/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/sitemap/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aefaa6fd-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aefaa6fe-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/sitemap/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/sitemap/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aefc54b0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aefc54b1-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/upload</destination>
+			<type>folder</type>
+			<uuidstructure>aefdb443-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/upload/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/upload/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aeff3ae5-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aeff3ae6-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ade/upload/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ade/upload/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af00e898-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af00e899-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/cache</destination>
+			<type>folder</type>
+			<uuidstructure>af02482b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/cache/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/cache/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af0380ad-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af0380ae-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/configuration</destination>
+			<type>folder</type>
+			<uuidstructure>af04e040-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/configuration/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/configuration/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af063fd2-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af063fd3-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db</destination>
+			<type>folder</type>
+			<uuidstructure>af079f65-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/db/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af124cd6-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af124cd7-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db/generic</destination>
+			<type>folder</type>
+			<uuidstructure>af08d7e7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/db/generic/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db/generic/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af0a5e89-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af0a5e8a-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db/jpa</destination>
+			<type>folder</type>
+			<uuidstructure>af0be52c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/db/jpa/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db/jpa/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af0d6bce-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af0d6bcf-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db/log</destination>
+			<type>folder</type>
+			<uuidstructure>af0f8db1-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/db/log/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/db/log/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af10ed43-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af10ed44-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors</destination>
+			<type>folder</type>
+			<uuidstructure>af138559-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/ckeditor</destination>
+			<type>folder</type>
+			<uuidstructure>af14bddb-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/editors/ckeditor/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/ckeditor/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af15f65d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af15f65e-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror</destination>
+			<type>folder</type>
+			<uuidstructure>af172ee0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af186762-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af186763-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources</destination>
+			<type>folder</type>
+			<uuidstructure>af19c6f5-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system</destination>
+			<type>folder</type>
+			<uuidstructure>af1aff77-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org</destination>
+			<type>folder</type>
+			<uuidstructure>af1c37f9-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms</destination>
+			<type>folder</type>
+			<uuidstructure>af1dbe9b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors</destination>
+			<type>folder</type>
+			<uuidstructure>af1f1e2d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror</destination>
+			<type>folder</type>
+			<uuidstructure>af20a4cf-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror/classes</destination>
+			<type>folder</type>
+			<uuidstructure>af222b71-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror/classes/org</destination>
+			<type>folder</type>
+			<uuidstructure>af23b213-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror/classes/org/opencms</destination>
+			<type>folder</type>
+			<uuidstructure>af255fc5-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror/classes/org/opencms/editors</destination>
+			<type>folder</type>
+			<uuidstructure>af273487-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror/classes/org/opencms/editors/codemirror</destination>
+			<type>folder</type>
+			<uuidstructure>af290949-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror/classes/org/opencms/editors/codemirror/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/codemirror/resources/system/org/opencms/editors/codemirror/classes/org/opencms/editors/codemirror/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af2b2c2b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af2b2c2c-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/fckeditor</destination>
+			<type>folder</type>
+			<uuidstructure>af2c64ae-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/editors/fckeditor/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/editors/fckeditor/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af2d9d30-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af2d9d31-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file</destination>
+			<type>folder</type>
+			<uuidstructure>af2ed5b3-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/file/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af327f3a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af327f3b-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file/collectors</destination>
+			<type>folder</type>
+			<uuidstructure>af2fe725-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/file/collectors/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file/collectors/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af311fa7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af311fa8-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file/types</destination>
+			<type>folder</type>
+			<uuidstructure>af33b7bd-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/file/types/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file/types/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af34f03f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af34f040-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file/wrapper</destination>
+			<type>folder</type>
+			<uuidstructure>af3628c2-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/file/wrapper/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/file/wrapper/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af378854-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af378855-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/flex</destination>
+			<type>folder</type>
+			<uuidstructure>af38c0d7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/flex/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/flex/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af39d249-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af39d24a-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend</destination>
+			<type>folder</type>
+			<uuidstructure>af3b0acc-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/layoutpage</destination>
+			<type>folder</type>
+			<uuidstructure>af3c1c3e-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/frontend/layoutpage/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/layoutpage/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af3da2e0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af3da2e1-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/photoalbum</destination>
+			<type>folder</type>
+			<uuidstructure>af3f77a3-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/frontend/photoalbum/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/photoalbum/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af414c65-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af414c66-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/templateone</destination>
+			<type>folder</type>
+			<uuidstructure>af42fa18-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af47dc1f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af47dc20-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/form</destination>
+			<type>folder</type>
+			<uuidstructure>af4480ba-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/form/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/form/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af46075c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af46075d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:14 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/modules</destination>
+			<type>folder</type>
+			<uuidstructure>af4962c2-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/modules/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/frontend/templateone/modules/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af4ae964-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af4ae965-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/gwt</destination>
+			<type>folder</type>
+			<uuidstructure>af4c48f7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/gwt/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/gwt/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af4dcf99-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af4dcf9a-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/gwt/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/gwt/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af4f563c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af4f563d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/gwt/seo</destination>
+			<type>folder</type>
+			<uuidstructure>af50b5cf-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/gwt/seo/clientmessages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/gwt/seo/clientmessages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af523c71-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af523c72-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[clientmessages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/i18n</destination>
+			<type>folder</type>
+			<uuidstructure>af539c04-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/i18n/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/i18n/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af54fb96-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af54fb97-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/importexport</destination>
+			<type>folder</type>
+			<uuidstructure>af565b29-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/importexport/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/importexport/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af57babb-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af57babc-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/jsp</destination>
+			<type>folder</type>
+			<uuidstructure>af591a4e-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/jsp/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/jsp/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af5dae35-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af5dae36-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/jsp/decorator</destination>
+			<type>folder</type>
+			<uuidstructure>af5a52d0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/jsp/decorator/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/jsp/decorator/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af5bb262-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af5bb263-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/jsp/util</destination>
+			<type>folder</type>
+			<uuidstructure>af5faa08-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/jsp/util/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/jsp/util/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af61a5da-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af61a5db-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/loader</destination>
+			<type>folder</type>
+			<uuidstructure>af63538d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/loader/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/loader/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af65013f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af650140-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/lock</destination>
+			<type>folder</type>
+			<uuidstructure>af6660d2-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/lock/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/lock/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af67e774-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af67e775-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/mail</destination>
+			<type>folder</type>
+			<uuidstructure>af694707-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/mail/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/mail/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af6acda9-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af6acdaa-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/main</destination>
+			<type>folder</type>
+			<uuidstructure>af6c2d3c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/main/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/main/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af6db3de-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af6db3df-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/module</destination>
+			<type>folder</type>
+			<uuidstructure>af6f3a81-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/module/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/module/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af709a13-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af709a14-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/monitor</destination>
+			<type>folder</type>
+			<uuidstructure>af7220b6-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/monitor/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/monitor/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af73a758-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af73a759-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/notification</destination>
+			<type>folder</type>
+			<uuidstructure>af752dfb-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/notification/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/notification/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af76b49d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af76b49e-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/publish</destination>
+			<type>folder</type>
+			<uuidstructure>af783b40-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/publish/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/publish/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af799ad2-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af799ad3-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/relations</destination>
+			<type>folder</type>
+			<uuidstructure>af7b4885-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/relations/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/relations/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af7ccf27-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af7ccf28-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/report</destination>
+			<type>folder</type>
+			<uuidstructure>af7e7cda-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/report/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/report/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af80519c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af80519d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/repository</destination>
+			<type>folder</type>
+			<uuidstructure>af81d83f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/repository/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/repository/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af8337d1-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af8337d2-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/scheduler</destination>
+			<type>folder</type>
+			<uuidstructure>af84be74-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/scheduler/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/scheduler/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af89525b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af89525c-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/scheduler/jobs</destination>
+			<type>folder</type>
+			<uuidstructure>af861e06-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/scheduler/jobs/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/scheduler/jobs/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af87a4a8-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af87a4a9-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search</destination>
+			<type>folder</type>
+			<uuidstructure>af8ad8fe-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/search/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af92a13a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af92a13b-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search/documents</destination>
+			<type>folder</type>
+			<uuidstructure>af8c3890-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/search/documents/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search/documents/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af8dbf32-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af8dbf33-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search/extractors</destination>
+			<type>folder</type>
+			<uuidstructure>af8f45d5-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/search/extractors/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search/extractors/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af90f387-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af90f388-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search/solr</destination>
+			<type>folder</type>
+			<uuidstructure>af944eed-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/search/solr/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/search/solr/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af95ae7f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af95ae80-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/security</destination>
+			<type>folder</type>
+			<uuidstructure>af973522-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/security/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/security/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af9894b4-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af9894b5-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/site</destination>
+			<type>folder</type>
+			<uuidstructure>af99f447-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/site/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/site/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af9b7ae9-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af9b7aea-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/staticexport</destination>
+			<type>folder</type>
+			<uuidstructure>af9d018c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/staticexport/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/staticexport/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>af9e611e-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>af9e611f-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/synchronize</destination>
+			<type>folder</type>
+			<uuidstructure>af9fc0b1-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/synchronize/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/synchronize/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afa16e63-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afa16e64-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ugc</destination>
+			<type>folder</type>
+			<uuidstructure>afa2f506-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/ugc/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/ugc/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afa45498-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afa45499-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/util</destination>
+			<type>folder</type>
+			<uuidstructure>afa5b42b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/util/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/util/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afa73acd-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afa73ace-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/webdav</destination>
+			<type>folder</type>
+			<uuidstructure>afa89960-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/webdav/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/webdav/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afa9f8f2-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afa9f8f3-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/widgets</destination>
+			<type>folder</type>
+			<uuidstructure>afab7f95-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/widgets/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/widgets/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afacdf27-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afacdf28-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workflow</destination>
+			<type>folder</type>
+			<uuidstructure>afae3eba-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workflow/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workflow/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afafc55c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afafc55d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace</destination>
+			<type>folder</type>
+			<uuidstructure>afb124ef-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afddda82-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afddda83-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/administration</destination>
+			<type>folder</type>
+			<uuidstructure>afb28481-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/administration/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/administration/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afb43233-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afb43234-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/commons</destination>
+			<type>folder</type>
+			<uuidstructure>afb5b8d6-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/commons/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/commons/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afb76688-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afb76689-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/comparison</destination>
+			<type>folder</type>
+			<uuidstructure>afb93b4b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/comparison/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/comparison/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afbac1ed-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afbac1ee-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/demos</destination>
+			<type>folder</type>
+			<uuidstructure>afbc96b0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/demos/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/demos/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afc178b7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afc178b8-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/demos/list</destination>
+			<type>folder</type>
+			<uuidstructure>afbe1d52-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/demos/list/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/demos/list/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afbfcb04-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afbfcb05-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/demos/widget</destination>
+			<type>folder</type>
+			<uuidstructure>afc3266a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/demos/widget/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/demos/widget/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afc4ad0c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afc4ad0d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/editors</destination>
+			<type>folder</type>
+			<uuidstructure>afc65abf-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/editors/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/editors/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afcb15b6-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afcb15b7-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/editors/directedit</destination>
+			<type>folder</type>
+			<uuidstructure>afc7ba51-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/editors/directedit/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/editors/directedit/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afc96803-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afc96804-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/explorer</destination>
+			<type>folder</type>
+			<uuidstructure>afccc369-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/explorer/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/explorer/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afd1cc80-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afd1cc81-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/explorer/menu</destination>
+			<type>folder</type>
+			<uuidstructure>afce22fb-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/explorer/menu/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/explorer/menu/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afcfd0ad-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afcfd0ae-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/galleries</destination>
+			<type>folder</type>
+			<uuidstructure>afd3a143-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/galleries/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/galleries/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afd5eb35-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afd5eb36-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/help</destination>
+			<type>folder</type>
+			<uuidstructure>afd798e8-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/help/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/help/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afd91f8a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afd91f8b-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/list</destination>
+			<type>folder</type>
+			<uuidstructure>afdaa62d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/list/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/list/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afdc2ccf-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afdc2cd0-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:15 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/search</destination>
+			<type>folder</type>
+			<uuidstructure>afdf8835-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/search/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/search/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afe10ed7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afe10ed8-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/threads</destination>
+			<type>folder</type>
+			<uuidstructure>afe2bc8a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/threads/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/threads/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afe46a3c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afe46a3d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools</destination>
+			<type>folder</type>
+			<uuidstructure>afe5f0df-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b0120a2d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b0120a2e-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/accounts</destination>
+			<type>folder</type>
+			<uuidstructure>afe77781-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/accounts/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/accounts/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afe92533-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afe92534-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/cache</destination>
+			<type>folder</type>
+			<uuidstructure>afeb2106-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/cache/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/cache/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>afecceb8-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>afecceb9-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content</destination>
+			<type>folder</type>
+			<uuidstructure>afee555b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aff9c71c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aff9c71d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/check</destination>
+			<type>folder</type>
+			<uuidstructure>afefdbfd-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/check/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/check/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aff1629f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aff162a0-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/convertxml</destination>
+			<type>folder</type>
+			<uuidstructure>aff31052-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/convertxml/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/convertxml/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aff4be04-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aff4be05-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/languagecopy</destination>
+			<type>folder</type>
+			<uuidstructure>aff66bb7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/languagecopy/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/languagecopy/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>aff7f259-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>aff7f25a-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/propertyviewer</destination>
+			<type>folder</type>
+			<uuidstructure>affb74cf-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/propertyviewer/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/propertyviewer/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>affd2281-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>affd2282-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/updatexml</destination>
+			<type>folder</type>
+			<uuidstructure>affef744-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/updatexml/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/content/updatexml/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b000a4f6-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b000a4f7-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/database</destination>
+			<type>folder</type>
+			<uuidstructure>b0022b99-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/database/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/database/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b004005b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b004005c-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/galleryoverview</destination>
+			<type>folder</type>
+			<uuidstructure>b005d51e-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/galleryoverview/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/galleryoverview/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b00782d0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b00782d1-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/history</destination>
+			<type>folder</type>
+			<uuidstructure>b0090973-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/history/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/history/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b00ab725-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b00ab726-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/link</destination>
+			<type>folder</type>
+			<uuidstructure>b00c64d8-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/link/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/link/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b00deb7a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b00deb7b-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/modules</destination>
+			<type>folder</type>
+			<uuidstructure>b01369c0-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/modules/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/modules/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b014c952-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b014c953-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/projects</destination>
+			<type>folder</type>
+			<uuidstructure>b01628e5-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/projects/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/projects/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b0178877-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b0178878-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/publishqueue</destination>
+			<type>folder</type>
+			<uuidstructure>b018c0fa-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/publishqueue/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/publishqueue/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b01a208c-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b01a208d-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/scheduler</destination>
+			<type>folder</type>
+			<uuidstructure>b01b801f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/scheduler/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/scheduler/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b01cdfb1-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b01cdfb2-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/searchindex</destination>
+			<type>folder</type>
+			<uuidstructure>b01e6654-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/searchindex/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/searchindex/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b01fc5e6-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b01fc5e7-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/searchindex/sourcesearch</destination>
+			<type>folder</type>
+			<uuidstructure>b0214c89-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/searchindex/sourcesearch/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/searchindex/sourcesearch/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b022ac1b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b022ac1c-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/sites</destination>
+			<type>folder</type>
+			<uuidstructure>b0240bae-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/sites/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/sites/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b0256b40-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b0256b41-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace</destination>
+			<type>folder</type>
+			<uuidstructure>b026a3c3-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b02d5a8f-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b02d5a90-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/broadcast</destination>
+			<type>folder</type>
+			<uuidstructure>b027dc45-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/broadcast/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/broadcast/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b0293bd7-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b0293bd8-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/logging</destination>
+			<type>folder</type>
+			<uuidstructure>b02a9b6a-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/logging/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/logging/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b02bfafc-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b02bfafd-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/rfsfile</destination>
+			<type>folder</type>
+			<uuidstructure>b02eba22-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/rfsfile/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/workplace/tools/workplace/rfsfile/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b03019b4-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b03019b5-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml</destination>
+			<type>folder</type>
+			<uuidstructure>b0317947-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/xml/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b03a7a08-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b03a7a09-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/adeconfig</destination>
+			<type>folder</type>
+			<uuidstructure>b032b1c9-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/xml/adeconfig/xmlvfsbundle_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/adeconfig/xmlvfsbundle_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b034115b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b034115c-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[xmlvfsbundle_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/containerpage</destination>
+			<type>folder</type>
+			<uuidstructure>b03570ee-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/xml/containerpage/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/containerpage/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b036a970-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b036a971-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/content</destination>
+			<type>folder</type>
+			<uuidstructure>b0380903-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/xml/content/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/content/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b0394185-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b0394186-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/page</destination>
+			<type>folder</type>
+			<uuidstructure>b03bb28b-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/xml/page/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/page/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b03ceb0d-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b03ceb0e-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/types</destination>
+			<type>folder</type>
+			<uuidstructure>b03e2390-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/locales/ja/messages/org/opencms/xml/types/messages_ja.properties</source>
+			<destination>system/workplace/locales/ja/messages/org/opencms/xml/types/messages_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>b03f8322-803d-11e4-b1b0-9ca3ba241563</uuidstructure>
+			<uuidresource>b03f8323-803d-11e4-b1b0-9ca3ba241563</uuidresource>
+			<datelastmodified>Wed, 10 Dec 2014 07:25:16 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 07:25:16 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[messages_ja]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules</destination>
+			<type>folder</type>
+			<uuidstructure>551878dd-800b-11e4-a31e-9ca3ba241563</uuidstructure>
+			<datelastmodified>Wed, 10 Dec 2014 01:24:48 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 10 Dec 2014 01:24:48 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
+					<flags>514</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules/com.alkacon.bootstrap.schemas</destination>
+			<type>folder</type>
+			<uuidstructure>e758ce9a-1a11-11e3-9358-000c29f9a2ec</uuidstructure>
+			<datelastmodified>Tue, 10 Sep 2013 12:09:54 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 10 Sep 2013 12:09:54 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/com.alkacon.bootstrap.schemas/elementviews</destination>
+			<type>folder</type>
+			<uuidstructure>a58c0fce-448b-11e4-8287-005056b61161</uuidstructure>
+			<datelastmodified>Thu, 25 Sep 2014 08:12:09 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 25 Sep 2014 08:12:09 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/com.alkacon.bootstrap.schemas/elementviews/layout.xml</source>
+			<destination>system/modules/com.alkacon.bootstrap.schemas/elementviews/layout.xml</destination>
+			<type>elementview</type>
+			<uuidstructure>cfaece13-448b-11e4-8287-005056b61161</uuidstructure>
+			<uuidresource>cfaece14-448b-11e4-8287-005056b61161</uuidresource>
+			<datelastmodified>Thu, 20 Nov 2014 04:46:31 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 25 Sep 2014 08:13:20 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[レイアウト]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>OVERWRITE_ALL</uuidprincipal>
+					<flags>256</flags>
+					<permissionset>
+						<allowed>0</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>ROLE.EDITOR</uuidprincipal>
+					<flags>512</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<source>system/modules/com.alkacon.bootstrap.schemas/elementviews/template.xml</source>
+			<destination>system/modules/com.alkacon.bootstrap.schemas/elementviews/template.xml</destination>
+			<type>elementview</type>
+			<uuidstructure>bac8ebc0-448b-11e4-8287-005056b61161</uuidstructure>
+			<uuidresource>bac8ebc1-448b-11e4-8287-005056b61161</uuidresource>
+			<datelastmodified>Thu, 20 Nov 2014 04:46:43 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Thu, 25 Sep 2014 08:12:45 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[テンプレート]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol>
+				<accessentry>
+					<uuidprincipal>OVERWRITE_ALL</uuidprincipal>
+					<flags>256</flags>
+					<permissionset>
+						<allowed>0</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+				<accessentry>
+					<uuidprincipal>ROLE.DEVELOPER</uuidprincipal>
+					<flags>512</flags>
+					<permissionset>
+						<allowed>5</allowed>
+						<denied>0</denied>
+					</permissionset>
+				</accessentry>
+			</accesscontrol>
+		</file>
+		<file>
+			<destination>system/modules/com.alkacon.opencms.documentation</destination>
+			<type>folder</type>
+			<uuidstructure>c432bd74-fc66-11e3-8410-fb93821e3720</uuidstructure>
+			<datelastmodified>Wed, 25 Jun 2014 12:46:45 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 25 Jun 2014 12:46:45 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/com.alkacon.opencms.documentation/elementviews</destination>
+			<type>folder</type>
+			<uuidstructure>074209da-47d2-11e4-9d1c-336f7b60f7b1</uuidstructure>
+			<datelastmodified>Mon, 29 Sep 2014 12:13:46 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 29 Sep 2014 12:13:31 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Element views exposed by that module]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/com.alkacon.opencms.documentation/elementviews/editor-view.xml</source>
+			<destination>system/modules/com.alkacon.opencms.documentation/elementviews/editor-view.xml</destination>
+			<type>elementview</type>
+			<uuidstructure>4af2879d-47d2-11e4-9d1c-336f7b60f7b1</uuidstructure>
+			<uuidresource>4af2879e-47d2-11e4-9d1c-336f7b60f7b1</uuidresource>
+			<datelastmodified>Fri, 21 Nov 2014 08:37:28 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 29 Sep 2014 12:15:25 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[エディターの設定に準ずる]]></value>
+				</property>
+				<property>
+					<name>locale</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>locale-available</name>
+					<value><![CDATA[en]]></value>
+				</property>
+				<property>
+					<name>search.exclude</name>
+					<value><![CDATA[true]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.ade.config</destination>
+			<type>folder</type>
+			<uuidstructure>599661f3-70d4-11e0-9709-91706a02fba1</uuidstructure>
+			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.ade.config/classes</destination>
+			<type>folder</type>
+			<uuidstructure>59a974c5-70d4-11e0-9709-91706a02fba1</uuidstructure>
+			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.ade.config/classes/org</destination>
+			<type>folder</type>
+			<uuidstructure>59abbeb7-70d4-11e0-9709-91706a02fba1</uuidstructure>
+			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.ade.config/classes/org/opencms</destination>
+			<type>folder</type>
+			<uuidstructure>59ae2fb9-70d4-11e0-9709-91706a02fba1</uuidstructure>
+			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.ade.config/classes/org/opencms/ade</destination>
+			<type>folder</type>
+			<uuidstructure>59b0a0bb-70d4-11e0-9709-91706a02fba1</uuidstructure>
+			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/modules/org.opencms.ade.config/classes/org/opencms/ade/config</destination>
+			<type>folder</type>
+			<uuidstructure>59b2eaad-70d4-11e0-9709-91706a02fba1</uuidstructure>
+			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/modules/org.opencms.ade.config/classes/org/opencms/ade/config/workplace_ja.properties</source>
+			<destination>system/modules/org.opencms.ade.config/classes/org/opencms/ade/config/workplace_ja.properties</destination>
+			<type>plain</type>
+			<uuidstructure>74608ebb-7143-11e4-a64b-9ca3ba241563</uuidstructure>
+			<uuidresource>74608ebc-7143-11e4-a64b-9ca3ba241563</uuidresource>
+			<datelastmodified>Fri, 21 Nov 2014 06:01:53 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Fri, 21 Nov 2014 05:58:45 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>content-encoding</name>
+					<value><![CDATA[ISO-8859-1]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/shared</destination>
+			<type>folder</type>
+			<uuidstructure>8253d0e9-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>export</name>
+					<value><![CDATA[false]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/shared/templatecontexts.json</source>
+			<destination>system/shared/templatecontexts.json</destination>
+			<type>plain</type>
+			<uuidstructure>c9c10d58-25b4-11e3-9fd8-000c29d28104</uuidstructure>
+			<uuidresource>c9c10d59-25b4-11e3-9fd8-000c29d28104</uuidresource>
+			<datelastmodified>Thu, 20 Nov 2014 07:30:06 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Wed, 25 Sep 2013 07:33:36 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties>
+				<property>
+					<name>Title</name>
+					<value><![CDATA[Template device contexts]]></value>
+				</property>
+			</properties>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/resources</destination>
+			<type>folder</type>
+			<uuidstructure>82c16052-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/components</destination>
+			<type>folder</type>
+			<uuidstructure>833afc9a-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/components/js_calendar</destination>
+			<type>folder</type>
+			<uuidstructure>833d6d9c-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Mon, 27 Jun 2005 08:00:00 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<destination>system/workplace/resources/components/js_calendar/lang</destination>
+			<type>folder</type>
+			<uuidstructure>83553b6c-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<datelastmodified>Mon, 27 Mar 2006 12:00:00 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 07 Mar 2006 08:41:14 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+		<file>
+			<source>system/workplace/resources/components/js_calendar/lang/calendar-jp.js</source>
+			<destination>system/workplace/resources/components/js_calendar/lang/calendar-jp.js</destination>
+			<type>plain</type>
+			<uuidstructure>83801c29-11b7-11db-91cd-fdbae480bac9</uuidstructure>
+			<uuidresource>23cf441e-adb6-11da-9937-71161b30b4f0</uuidresource>
+			<datelastmodified>Tue, 09 Dec 2014 08:46:11 GMT</datelastmodified>
+			<userlastmodified>Admin</userlastmodified>
+			<datecreated>Tue, 07 Mar 2006 08:41:15 GMT</datecreated>
+			<usercreated>Admin</usercreated>
+			<flags>0</flags>
+			<properties/>
+			<relations/>
+			<accesscontrol/>
+		</file>
+	</files>
+</export>

@@ -1,0 +1,165 @@
+{
+	"desktop": {
+		"niceName": { 
+			"en": "Desktop",
+			"de": "Desktop",
+			"ja": "デスクトップ"
+		},
+		"path": "%(template)",
+		"variants": {
+			"small": {
+				"niceName": {"en":"Small desktop (1024)","de":"Small desktop (1024)","ja":"デスクトップ(1024px)"} ,
+				"width": 1024,
+				"height": 768
+			},		
+			"big": {
+				"niceName": {"en":"Large desktop (1280)","de":"Large desktop (1280)","ja":"デスクトップ(1280px)"} ,
+				"width": 1280,
+				"height": 800
+			}				
+		}				
+	},	
+
+	"tablet": {
+		"niceName": { 
+			"en": "Tablet",
+			"de": "Tablet",
+			"ja": "タブレット"
+		},
+		"path": "%(template)",
+		"variants": {
+			"ipad": {
+				"niceName": {"en":"iPad (portrait)","de":"iPad (portrait)","ja":"iPad (縦)"} ,
+				"width": 768,
+				"height": 1024
+			},
+			"ipad-ls": {
+				"niceName": {"en":"iPad (landscape)","de":"iPad (landscape)","ja":"iPad (横)"} ,
+				"width": 1024,
+				"height": 768
+			},
+			"nexus7": {
+				"niceName": {"en":"Nexus 7 (portrait)","de":"Nexus 7 (portrait)","ja":"Nexus 7 (縦)"} ,
+				"width": 604,
+				"height": 966
+			},
+			"nexus7-ls": {
+				"niceName": {"en":"Nexus 7 (landscape)","de":"Nexus 7 (landscape)","ja":"Nexus 7 (横)"} ,
+				"width": 966,
+				"height": 604
+			},			
+			"kindlefire": {
+				"niceName": {"en":"Kindle Fire (portrait)","de":"Kindle Fire (portrait)","ja":"Kindle Fire (縦)"} ,
+				"width": 600,
+				"height": 800
+			},
+			"kindlefire-ls": {
+				"niceName": {"en":"Kindle Fire (landscape)","de":"Kindle Fire (landscape)","ja":"Kindle Fire (横)"} ,
+				"width": 800,
+				"height": 600
+			},
+			"galaxytab": {
+				"niceName": {"en":"Galaxy Tab (portrait)","de":"Galaxy Tab (portrait)","ja":"Galaxy Tab (縦)"} ,
+				"width": 600,
+				"height": 1024
+			},		
+			"galaxytab-ls": {
+				"niceName": {"en":"Galaxy Tab (landscape)","de":"Galaxy Tab (landscape)","ja":"Galaxy Tab (縦)"} ,
+				"width": 1024,
+				"height": 600
+			} 
+		}
+	},
+	
+	"mobile": {
+		"niceName": { 
+			"en": "Mobile",
+			"de": "Mobil",
+			"ja": "モバイル"
+		},
+		"path": "%(template)",
+		"variants": {
+			"iphone6plus": {
+				"niceName": {"en":"iPhone 6 Plus (portrait)","de":"iPhone 6 Plus (portrait)","ja":"iPhone 6 Plus (縦)"} ,
+				"width": 414,
+				"height": 736
+			},	
+			"iphone6plus-ls": {
+				"niceName": {"en":"iPhone 6 Plus (landscape)","de":"iPhone 6 Plus (landscape)","ja":"iPhone 6 Plus (横)"} ,
+				"width": 736,
+				"height": 414
+			},				
+			"iphone6": {
+				"niceName": {"en":"iPhone 6 (portrait)","de":"iPhone 6 (portrait)","ja":"iPhone 6 (縦)"} ,
+				"width": 375,
+				"height": 667
+			},
+			"iphone6-ls": {
+				"niceName": {"en":"iPhone 6 (landscape)","de":"iPhone 6 (landscape)","ja":"iPhone 6 (横)"} ,
+				"width": 667,
+				"height": 375
+			},			
+			"iphone5": {
+				"niceName": {"en":"iPhone 5 (portrait)","de":"iPhone 5 (portrait)","ja":"iPhone 5 (縦)"} ,
+				"width": 320,
+				"height": 568
+			},
+			"iphone5-ls": {
+				"niceName": {"en":"iPhone 5 (landscape)","de":"iPhone 5 (landscape)","ja":"iPhone 5 (横)"} ,
+				"width": 568,
+				"height": 320
+			},		
+			"iphone4": {
+				"niceName": {"en":"iPhone 3-4 (portrait)","de":"iPhone 3-4 (portrait)","ja":"iPhone 3-4 (縦)"} ,
+				"width": 320,
+				"height": 480
+			},
+			"iphone4-ls": {
+				"niceName": {"en":"iPhone 3-4 (landscape)","de":"iPhone 3-4 (landscape)","ja":"iPhone 3-4 (横)"} ,
+				"width": 480,
+				"height": 320
+			},	
+			"nexus5": {
+				"niceName": {"en":"Nexus 5 (portrait)","de":"Nexus 5 (portrait)","ja":"Nexus 5 (縦)"} ,
+				"width": 360,
+				"height": 640
+			},	
+			"nexus5-ls": {
+				"niceName": {"en":"Nexus 5 (landscape)","de":"Nexus 5 (landscape)","ja":"Nexus 5 (横)"} ,
+				"width": 640,
+				"height": 360
+			},				
+			"galaxys5": {
+				"niceName": {"en":"Galaxy S5 (portrait)","de":"Galaxy S5 (portrait)","ja":"Galaxy S5 (縦)"} ,
+				"width": 360,
+				"height": 640
+			},			
+			"galaxys5-ls": {
+				"niceName": {"en":"Galaxy S5 (landscape)","de":"Galaxy S5 (landscape)","ja":"Galaxy S5 (横)"} ,
+				"width": 640,
+				"height": 360
+			},				
+			"galaxys4": {
+				"niceName": {"en":"Galaxy S3/4 (portrait)","de":"Galaxy S3/4 (portrait)","ja":"Galaxy S3/4 (縦)"} ,
+				"width": 380,
+				"height": 685
+			},			
+			"galaxys4-ls": {
+				"niceName": {"en":"Galaxy S3/4 (landscape)","de":"Galaxy S3/4 (landscape)","ja":"Galaxy S3/4 (横)"} ,
+				"width": 685,
+				"height": 380
+			},				
+			"andsml": {
+				"niceName": {"en":"Small Android (portrait)","de":"Small Android (portrait)","ja":"Small Android (縦)"} ,
+				"width": 240,
+				"height": 320
+			},
+			"andsml-ls": {
+				"niceName": {"en":"Small Android (landscape)","de":"Small Android (landscape)","ja":"Small Android (横)"} ,
+				"width": 320,
+				"height": 240
+			} 					
+		}
+		
+	}	
+}
