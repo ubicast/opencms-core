@@ -19,7 +19,11 @@
  *
  * For further information about OpenCms, please see the
  * project website: http://www.opencms.org
+<<<<<<< HEAD
  *
+=======
+
+>>>>>>> alkacon/branch_9_5_x
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -42,6 +46,7 @@ import org.opencms.file.types.A_CmsResourceType;
 import org.opencms.file.types.CmsResourceTypeFolder;
 import org.opencms.file.types.CmsResourceTypeUnknown;
 import org.opencms.file.types.CmsResourceTypeXmlContainerPage;
+import org.opencms.file.types.CmsResourceTypeXmlContent;
 import org.opencms.file.types.I_CmsResourceType;
 import org.opencms.i18n.CmsLocaleManager;
 import org.opencms.i18n.CmsVfsBundleManager;
@@ -60,6 +65,8 @@ import org.opencms.util.CmsUUID;
 import org.opencms.workplace.CmsWorkplace;
 import org.opencms.workplace.explorer.CmsExplorerTypeSettings;
 import org.opencms.xml.CmsXmlException;
+import org.opencms.xml.content.CmsXmlContent;
+import org.opencms.xml.content.CmsXmlContentFactory;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -368,12 +375,22 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
                     CmsADEManager.MODULE_CONFIG_TYPE).getTypeId()));
             Function<String, String> substitution = Functions.identity();
             // compose the substitution functions from simple substitution functions for each type
+<<<<<<< HEAD
+=======
+
+>>>>>>> alkacon/branch_9_5_x
             for (Map.Entry<I_CmsResourceType, I_CmsResourceType> mapping : resTypeMap.entrySet()) {
                 substitution = Functions.compose(new ReplaceAll(
                     mapping.getKey().getTypeName(),
                     mapping.getValue().getTypeName()), substitution);
             }
+<<<<<<< HEAD
             // Either replace prefix in or prepend it to the folder name value
+=======
+
+            // Either replace prefix in or prepend it to the folder name value
+
+>>>>>>> alkacon/branch_9_5_x
             Function<String, String> replaceFolderName = new ReplaceAll("(<Folder>[ \n]*<Name><!\\[CDATA\\[)("
                 + m_cloneInfo.getSourceNamePrefix()
                 + ")?", "$1" + m_cloneInfo.getTargetNamePrefix());
@@ -463,6 +480,11 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
             for (CmsResource res : resources) {
                 if (lockResource(cms, res)) {
                     CmsFile file = cms.readFile(res);
+                    if (CmsResourceTypeXmlContent.isXmlContent(file)) {
+                        CmsXmlContent xmlContent = CmsXmlContentFactory.unmarshal(getCms(), file);
+                        xmlContent.setAutoCorrectionEnabled(true);
+                        file = xmlContent.correctXmlStructure(getCms());
+                    }
                     String encoding = CmsLocaleManager.getResourceEncoding(cms, file);
                     String content = new String(file.getContents(), encoding);
                     content = content.replaceAll(sourceSchemaPath, targetSchemaPath);
@@ -581,7 +603,11 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
 
     /**
      * Clones/copies the resource types.<p>
+<<<<<<< HEAD
      *
+=======
+
+>>>>>>> alkacon/branch_9_5_x
      * @param sourceModule the source module
      * @param targetModule the target module
      * @param sourcePathPart the source path part
@@ -819,7 +845,11 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
                 cms.getRequestContext().getCurrentProject())) {
             // prove is current lock from current user but not in current project
             // file is locked by current user but not in current project
+<<<<<<< HEAD
             // change the lock
+=======
+
+>>>>>>> alkacon/branch_9_5_x
             cms.changeLock(cms.getSitePath(cmsResource));
         } else if ((lock != null) && lock.isUnlocked()) {
             // lock resource from current user in current project
@@ -846,7 +876,10 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
      * @param name the package name of the source module
      *
      * @return a list of all xml vfs bundles within the given module
+<<<<<<< HEAD
      *
+=======
+>>>>>>> alkacon/branch_9_5_x
      * @throws CmsException if something gows wrong
      */
     private List<CmsResource> renameXmlVfsBundles(List<CmsResource> resources, CmsModule targetModule, String name)
@@ -881,6 +914,11 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
             String schemaPath = type.getConfiguration().get("schema");
             CmsResource res = getCms().readResource(schemaPath);
             CmsFile file = getCms().readFile(res);
+            if (CmsResourceTypeXmlContent.isXmlContent(file)) {
+                CmsXmlContent xmlContent = CmsXmlContentFactory.unmarshal(getCms(), file);
+                xmlContent.setAutoCorrectionEnabled(true);
+                file = xmlContent.correctXmlStructure(getCms());
+            }
             String encoding = CmsLocaleManager.getResourceEncoding(getCms(), file);
             String content = new String(file.getContents(), encoding);
             content = content.replaceAll(formatterSourceFolder.getRootPath(), formatterTargetFolder.getRootPath());
@@ -892,8 +930,14 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
     /**
      * Initializes a thread to find and replace all occurrence of the module's path.<p>
      *
+<<<<<<< HEAD
      * @throws CmsException
      * @throws UnsupportedEncodingException
+=======
+     * @throws CmsException in case writing the file fails
+     * @throws UnsupportedEncodingException in case of the wrong encoding
+
+>>>>>>> alkacon/branch_9_5_x
      */
     private void replaceModuleName() throws CmsException, UnsupportedEncodingException {
 
@@ -903,6 +947,11 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
             filter);
         for (CmsResource resource : resources) {
             CmsFile file = getCms().readFile(resource);
+            if (CmsResourceTypeXmlContent.isXmlContent(file)) {
+                CmsXmlContent xmlContent = CmsXmlContentFactory.unmarshal(getCms(), file);
+                xmlContent.setAutoCorrectionEnabled(true);
+                file = xmlContent.correctXmlStructure(getCms());
+            }
             byte[] contents = file.getContents();
             String encoding = CmsLocaleManager.getResourceEncoding(getCms(), file);
             String content = new String(contents, encoding);
@@ -933,6 +982,11 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
         for (CmsResource resource : resources) {
             if (resource.isFile()) {
                 CmsFile file = getCms().readFile(resource);
+                if (CmsResourceTypeXmlContent.isXmlContent(file)) {
+                    CmsXmlContent xmlContent = CmsXmlContentFactory.unmarshal(getCms(), file);
+                    xmlContent.setAutoCorrectionEnabled(true);
+                    file = xmlContent.correctXmlStructure(getCms());
+                }
                 String encoding = CmsLocaleManager.getResourceEncoding(getCms(), file);
                 String oldContent = new String(file.getContents(), encoding);
                 String newContent = oldContent.replaceAll(sourceModulePath, targetModulePath);
@@ -961,6 +1015,10 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
      *
      * @throws CmsException if something goes wrong
      * @throws UnsupportedEncodingException if the file content could not be read with the determined encoding
+<<<<<<< HEAD
+=======
+
+>>>>>>> alkacon/branch_9_5_x
      */
     private void replacesMessages(Map<String, String> descKeys, List<CmsResource> resources)
     throws CmsException, UnsupportedEncodingException {
@@ -989,6 +1047,11 @@ public class CmsCloneModuleThread extends A_CmsReportThread {
     throws CmsException, UnsupportedEncodingException {
 
         CmsFile file = getCms().readFile(resource);
+        if (CmsResourceTypeXmlContent.isXmlContent(file)) {
+            CmsXmlContent xmlContent = CmsXmlContentFactory.unmarshal(getCms(), file);
+            xmlContent.setAutoCorrectionEnabled(true);
+            file = xmlContent.correctXmlStructure(getCms());
+        }
         String encoding = CmsLocaleManager.getResourceEncoding(getCms(), file);
         String content = new String(file.getContents(), encoding);
         content = transformation.apply(content);

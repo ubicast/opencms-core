@@ -668,20 +668,27 @@ public class CmsLinkManager {
      * 
      * @param cms the current OpenCms user context
      * @param link the resource to generate the online link for
-     * @param resourceName the resource name
+     * @param pathWithOptionalParameters the resource name
      * 
      * @return the link for the given resource in the current project, with full server prefix
      */
-    private String appendServerPrefix(CmsObject cms, String link, String resourceName) {
+    private String appendServerPrefix(CmsObject cms, String link, String pathWithOptionalParameters) {
+
+        int paramPos = pathWithOptionalParameters.indexOf("?");
+        String resourceName = paramPos > -1
+        ? pathWithOptionalParameters.substring(0, paramPos)
+        : pathWithOptionalParameters;
 
         if (isAbsoluteUri(link) && !hasScheme(link)) {
             // URI is absolute and contains no schema
             // this indicates source and target link are in the same site
             String serverPrefix;
             if (cms.getRequestContext().getCurrentProject().isOnlineProject()) {
+                String overrideSiteRoot = (String)(cms.getRequestContext().getAttribute(CmsDefaultLinkSubstitutionHandler.OVERRIDE_SITEROOT_PREFIX
+                    + link));
                 // on online project, get the real site name from the site manager
                 CmsSite currentSite = OpenCms.getSiteManager().getSite(
-                    resourceName,
+                    overrideSiteRoot != null ? overrideSiteRoot : resourceName,
                     cms.getRequestContext().getSiteRoot());
                 serverPrefix = currentSite.getServerPrefix(cms, resourceName);
             } else {

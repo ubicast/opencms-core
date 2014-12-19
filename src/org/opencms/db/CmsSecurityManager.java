@@ -2937,7 +2937,31 @@ public final class CmsSecurityManager {
             return false;
         }
 
-        result = Boolean.valueOf(hasRole(role, roles));
+        boolean hasRole = hasRole(role, roles);
+
+        // hack: require individual user based confirmation for certain roles
+        // this is for updated older systems where users have traditionally been WORKPLAVE_USERS
+        // to prevent access to certain ADE management functions
+        if (hasRole && ((CmsRole.CATEGORY_EDITOR.equals(role)) || (CmsRole.GALLERY_EDITOR.equals(role)))) {
+            String info = "confirm.role." + role.getRoleName();
+            Object prop = OpenCms.getRuntimeProperty(info);
+            if ((prop != null) && Boolean.valueOf(prop.toString()).booleanValue()) {
+                // individual user based confirmation for the role is required
+                // check if the user is a higher ranking user or only a workplace user
+                Object val = user.getAdditionalInfo(info);
+                if ((val == null) || !Boolean.valueOf(val.toString()).booleanValue()) {
+                    // no individual user confirmation present
+                    if (!hasRole(CmsRole.DEVELOPER, roles)
+                        && !hasRole(CmsRole.PROJECT_MANAGER, roles)
+                        && !hasRole(CmsRole.ACCOUNT_MANAGER, roles)) {
+                        // user is "only" a workplace user, confirmation is required but not present
+                        hasRole = false;
+                    }
+                }
+            }
+        }
+
+        result = Boolean.valueOf(hasRole);
         OpenCms.getMemoryMonitor().cacheRole(key, result.booleanValue());
         return result.booleanValue();
     }
@@ -6728,6 +6752,7 @@ public final class CmsSecurityManager {
      * @param nameSeq the sequence of URL name candidates
      * @param structureId the structure id which should be mapped to the name
      * @param locale the locale for the mapping
+     * @param replaceOnPublish mappings for which this is set will replace all other mappings for the same resource on publishing 
      *
      * @return the name which was actually mapped to the structure id
      *
@@ -6737,11 +6762,12 @@ public final class CmsSecurityManager {
         CmsRequestContext context,
         Iterator<String> nameSeq,
         CmsUUID structureId,
-        String locale) throws CmsException {
+        String locale,
+        boolean replaceOnPublish) throws CmsException {
 
         CmsDbContext dbc = m_dbContextFactory.getDbContext(context);
         try {
-            return m_driverManager.writeUrlNameMapping(dbc, nameSeq, structureId, locale);
+            return m_driverManager.writeUrlNameMapping(dbc, nameSeq, structureId, locale, replaceOnPublish);
         } catch (Exception e) {
             CmsMessageContainer message = Messages.get().container(
                 Messages.ERR_ADD_URLNAME_MAPPING_2,
@@ -7089,14 +7115,11 @@ public final class CmsSecurityManager {
      */
     protected boolean hasRole(CmsRole role, List<CmsGroup> roles) {
 
-        // iterates the roles the user are in
-        Iterator<CmsGroup> itGroups = roles.iterator();
-        while (itGroups.hasNext()) {
-            String groupName = (itGroups.next()).getName();
+        // iterates the role groups the user is in
+        for (CmsGroup group : roles) {
+            String groupName = group.getName();
             // iterate the role hierarchy
-            Iterator<String> itDistinctGroupNames = role.getDistinctGroupNames().iterator();
-            while (itDistinctGroupNames.hasNext()) {
-                String distictGroupName = itDistinctGroupNames.next();
+            for (String distictGroupName : role.getDistinctGroupNames()) {
                 if (distictGroupName.startsWith(CmsOrganizationalUnit.SEPARATOR)) {
                     // this is a ou independent role
                     // we need an exact match, and we ignore the ou parameter

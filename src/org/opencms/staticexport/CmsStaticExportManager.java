@@ -265,6 +265,9 @@ public class CmsStaticExportManager implements I_CmsEventListener {
     /** Prefix to use for internal OpenCms files with unsubstituted context values. */
     private String m_vfsPrefixConfigured;
 
+    /** CMS context with admin permissions. */
+    private CmsObject m_adminCms;
+
     /**
      * Creates a new static export property object.<p>
      * 
@@ -1572,6 +1575,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
      */
     public void initialize(CmsObject cms) {
 
+        m_adminCms = cms;
         // initialize static export RFS path (relative to web application)
         m_staticExportPath = normalizeExportPath(m_staticExportPathConfigured);
         m_staticExportWorkPath = normalizeExportPath(getExportWorkPathForConfiguration());
@@ -1739,6 +1743,9 @@ public class CmsStaticExportManager implements I_CmsEventListener {
     public boolean isExportLink(CmsObject cms, String vfsName) {
 
         LOG.info("isExportLink? " + vfsName);
+        if (!isStaticExportEnabled()) {
+            return false;
+        }
         String siteRoot = cms.getRequestContext().getSiteRoot();
         // vfsname may still be a root path for a site with a different site root 
         CmsSite site = OpenCms.getSiteManager().getSiteForRootPath(vfsName);
@@ -1842,8 +1849,23 @@ public class CmsStaticExportManager implements I_CmsEventListener {
         String cacheKey = OpenCms.getStaticExportManager().getCacheKey(cms.getRequestContext().getSiteRoot(), vfsName);
         String secureResource = OpenCms.getStaticExportManager().getCacheSecureLinks().get(cacheKey);
         if (secureResource == null) {
+            CmsObject cmsForReadingProperties = cms;
             try {
-                secureResource = cms.readPropertyObject(vfsName, CmsPropertyDefinition.PROPERTY_SECURE, true).getValue();
+                // the link target resource may not be readable by the current user, so we use a CmsObject with admin permissions
+                // to read the "secure" property 
+                CmsObject adminCms = OpenCms.initCmsObject(m_adminCms);
+                adminCms.getRequestContext().setSiteRoot(cms.getRequestContext().getSiteRoot());
+                adminCms.getRequestContext().setCurrentProject(cms.getRequestContext().getCurrentProject());
+                adminCms.getRequestContext().setRequestTime(cms.getRequestContext().getRequestTime());
+                cmsForReadingProperties = adminCms;
+            } catch (Exception e) {
+                LOG.error("Could not initialize CmsObject in isSecureLink:" + e.getLocalizedMessage(), e);
+            }
+            try {
+                secureResource = cmsForReadingProperties.readPropertyObject(
+                    vfsName,
+                    CmsPropertyDefinition.PROPERTY_SECURE,
+                    true).getValue();
                 if (CmsStringUtil.isEmptyOrWhitespaceOnly(secureResource)) {
                     secureResource = "false";
                 }
@@ -1856,7 +1878,7 @@ public class CmsStaticExportManager implements I_CmsEventListener {
             } catch (Exception e) {
                 // no secure link required (probably security issues, e.g. no access for current user)
                 // however other users may be allowed to read the resource, so the result can't be cached
-                secureResource = "false";
+                return false;
             }
         }
         return Boolean.parseBoolean(secureResource)
