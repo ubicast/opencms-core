@@ -4,7 +4,7 @@
 	<info>
 		<creator>Admin</creator>
 		<opencms_version>9.5.0</opencms_version>
-		<createdate>Wed, 10 Dec 2014 09:34:17 GMT</createdate>
+		<createdate>Fri, 26 Dec 2014 05:56:33 GMT</createdate>
 		<infoproject>Offline</infoproject>
 		<export_version>7</export_version>
 	</info>
@@ -27,10 +27,6 @@
 		<resources>
 			<resource uri="/system/workplace/locales/ja/messages/"/>
 			<resource uri="/system/shared/templatecontexts.json"/>
-			<resource uri="/system/modules/org.opencms.ade.config/classes/org/opencms/ade/config/workplace_ja.properties"/>
-			<resource uri="/system/modules/com.alkacon.bootstrap.schemas/elementviews/layout.xml"/>
-			<resource uri="/system/modules/com.alkacon.bootstrap.schemas/elementviews/template.xml"/>
-			<resource uri="/system/modules/com.alkacon.opencms.documentation/elementviews/editor-view.xml"/>
 			<resource uri="/system/workplace/resources/components/js_calendar/lang/calendar-jp.js"/>
 		</resources>
 		<parameters/>
@@ -39,10 +35,10 @@
 		<file>
 			<destination>system</destination>
 			<type>folder</type>
-			<uuidstructure>53907911-800b-11e4-a31e-9ca3ba241563</uuidstructure>
-			<datelastmodified>Wed, 10 Dec 2014 01:24:46 GMT</datelastmodified>
+			<uuidstructure>3bccd0f7-80d7-11e4-ab5e-9ca3ba241563</uuidstructure>
+			<datelastmodified>Thu, 11 Dec 2014 01:44:23 GMT</datelastmodified>
 			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 10 Dec 2014 01:24:46 GMT</datecreated>
+			<datecreated>Thu, 11 Dec 2014 01:44:23 GMT</datecreated>
 			<usercreated>Admin</usercreated>
 			<flags>0</flags>
 			<properties/>
@@ -4039,289 +4035,6 @@
 				<property>
 					<name>Title</name>
 					<value><![CDATA[messages_ja]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules</destination>
-			<type>folder</type>
-			<uuidstructure>551878dd-800b-11e4-a31e-9ca3ba241563</uuidstructure>
-			<datelastmodified>Wed, 10 Dec 2014 01:24:48 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 10 Dec 2014 01:24:48 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol>
-				<accessentry>
-					<uuidprincipal>ROLE.WORKPLACE_USER</uuidprincipal>
-					<flags>514</flags>
-					<permissionset>
-						<allowed>5</allowed>
-						<denied>0</denied>
-					</permissionset>
-				</accessentry>
-			</accesscontrol>
-		</file>
-		<file>
-			<destination>system/modules/com.alkacon.bootstrap.schemas</destination>
-			<type>folder</type>
-			<uuidstructure>e758ce9a-1a11-11e3-9358-000c29f9a2ec</uuidstructure>
-			<datelastmodified>Tue, 10 Sep 2013 12:09:54 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Tue, 10 Sep 2013 12:09:54 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/com.alkacon.bootstrap.schemas/elementviews</destination>
-			<type>folder</type>
-			<uuidstructure>a58c0fce-448b-11e4-8287-005056b61161</uuidstructure>
-			<datelastmodified>Thu, 25 Sep 2014 08:12:09 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Thu, 25 Sep 2014 08:12:09 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/com.alkacon.bootstrap.schemas/elementviews/layout.xml</source>
-			<destination>system/modules/com.alkacon.bootstrap.schemas/elementviews/layout.xml</destination>
-			<type>elementview</type>
-			<uuidstructure>cfaece13-448b-11e4-8287-005056b61161</uuidstructure>
-			<uuidresource>cfaece14-448b-11e4-8287-005056b61161</uuidresource>
-			<datelastmodified>Thu, 20 Nov 2014 04:46:31 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Thu, 25 Sep 2014 08:13:20 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[レイアウト]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol>
-				<accessentry>
-					<uuidprincipal>OVERWRITE_ALL</uuidprincipal>
-					<flags>256</flags>
-					<permissionset>
-						<allowed>0</allowed>
-						<denied>0</denied>
-					</permissionset>
-				</accessentry>
-				<accessentry>
-					<uuidprincipal>ROLE.EDITOR</uuidprincipal>
-					<flags>512</flags>
-					<permissionset>
-						<allowed>5</allowed>
-						<denied>0</denied>
-					</permissionset>
-				</accessentry>
-			</accesscontrol>
-		</file>
-		<file>
-			<source>system/modules/com.alkacon.bootstrap.schemas/elementviews/template.xml</source>
-			<destination>system/modules/com.alkacon.bootstrap.schemas/elementviews/template.xml</destination>
-			<type>elementview</type>
-			<uuidstructure>bac8ebc0-448b-11e4-8287-005056b61161</uuidstructure>
-			<uuidresource>bac8ebc1-448b-11e4-8287-005056b61161</uuidresource>
-			<datelastmodified>Thu, 20 Nov 2014 04:46:43 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Thu, 25 Sep 2014 08:12:45 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[テンプレート]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol>
-				<accessentry>
-					<uuidprincipal>OVERWRITE_ALL</uuidprincipal>
-					<flags>256</flags>
-					<permissionset>
-						<allowed>0</allowed>
-						<denied>0</denied>
-					</permissionset>
-				</accessentry>
-				<accessentry>
-					<uuidprincipal>ROLE.DEVELOPER</uuidprincipal>
-					<flags>512</flags>
-					<permissionset>
-						<allowed>5</allowed>
-						<denied>0</denied>
-					</permissionset>
-				</accessentry>
-			</accesscontrol>
-		</file>
-		<file>
-			<destination>system/modules/com.alkacon.opencms.documentation</destination>
-			<type>folder</type>
-			<uuidstructure>c432bd74-fc66-11e3-8410-fb93821e3720</uuidstructure>
-			<datelastmodified>Wed, 25 Jun 2014 12:46:45 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 25 Jun 2014 12:46:45 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/com.alkacon.opencms.documentation/elementviews</destination>
-			<type>folder</type>
-			<uuidstructure>074209da-47d2-11e4-9d1c-336f7b60f7b1</uuidstructure>
-			<datelastmodified>Mon, 29 Sep 2014 12:13:46 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Mon, 29 Sep 2014 12:13:31 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[Element views exposed by that module]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/com.alkacon.opencms.documentation/elementviews/editor-view.xml</source>
-			<destination>system/modules/com.alkacon.opencms.documentation/elementviews/editor-view.xml</destination>
-			<type>elementview</type>
-			<uuidstructure>4af2879d-47d2-11e4-9d1c-336f7b60f7b1</uuidstructure>
-			<uuidresource>4af2879e-47d2-11e4-9d1c-336f7b60f7b1</uuidresource>
-			<datelastmodified>Fri, 21 Nov 2014 08:37:28 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Mon, 29 Sep 2014 12:15:25 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>Title</name>
-					<value><![CDATA[エディターの設定に準ずる]]></value>
-				</property>
-				<property>
-					<name>locale</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>locale-available</name>
-					<value><![CDATA[en]]></value>
-				</property>
-				<property>
-					<name>search.exclude</name>
-					<value><![CDATA[true]]></value>
-				</property>
-			</properties>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.ade.config</destination>
-			<type>folder</type>
-			<uuidstructure>599661f3-70d4-11e0-9709-91706a02fba1</uuidstructure>
-			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.ade.config/classes</destination>
-			<type>folder</type>
-			<uuidstructure>59a974c5-70d4-11e0-9709-91706a02fba1</uuidstructure>
-			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.ade.config/classes/org</destination>
-			<type>folder</type>
-			<uuidstructure>59abbeb7-70d4-11e0-9709-91706a02fba1</uuidstructure>
-			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.ade.config/classes/org/opencms</destination>
-			<type>folder</type>
-			<uuidstructure>59ae2fb9-70d4-11e0-9709-91706a02fba1</uuidstructure>
-			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.ade.config/classes/org/opencms/ade</destination>
-			<type>folder</type>
-			<uuidstructure>59b0a0bb-70d4-11e0-9709-91706a02fba1</uuidstructure>
-			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<destination>system/modules/org.opencms.ade.config/classes/org/opencms/ade/config</destination>
-			<type>folder</type>
-			<uuidstructure>59b2eaad-70d4-11e0-9709-91706a02fba1</uuidstructure>
-			<datelastmodified>Wed, 27 Apr 2011 13:43:36 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Wed, 27 Apr 2011 13:43:36 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties/>
-			<relations/>
-			<accesscontrol/>
-		</file>
-		<file>
-			<source>system/modules/org.opencms.ade.config/classes/org/opencms/ade/config/workplace_ja.properties</source>
-			<destination>system/modules/org.opencms.ade.config/classes/org/opencms/ade/config/workplace_ja.properties</destination>
-			<type>plain</type>
-			<uuidstructure>74608ebb-7143-11e4-a64b-9ca3ba241563</uuidstructure>
-			<uuidresource>74608ebc-7143-11e4-a64b-9ca3ba241563</uuidresource>
-			<datelastmodified>Fri, 21 Nov 2014 06:01:53 GMT</datelastmodified>
-			<userlastmodified>Admin</userlastmodified>
-			<datecreated>Fri, 21 Nov 2014 05:58:45 GMT</datecreated>
-			<usercreated>Admin</usercreated>
-			<flags>0</flags>
-			<properties>
-				<property>
-					<name>content-encoding</name>
-					<value><![CDATA[ISO-8859-1]]></value>
 				</property>
 			</properties>
 			<relations/>
