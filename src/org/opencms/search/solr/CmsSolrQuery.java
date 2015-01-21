@@ -23,7 +23,7 @@
  *
  * For further information about OpenCms, please see the
  * project website: http://www.opencms.org
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
@@ -124,6 +124,32 @@ public class CmsSolrQuery extends SolrQuery {
     /** The serial version UID. */
     private static final long serialVersionUID = -2387357736597627703L;
 
+    /**
+     * Returns the resource type if only one is set as filter query.<p>
+     *
+     * @param fqs the field queries to check
+     *
+     * @return the type or <code>null</code>
+     */
+    public static String getResourceType(String[] fqs) {
+
+        String ret = null;
+        int count = 0;
+        if (fqs != null) {
+            for (String fq : fqs) {
+                if (fq.startsWith(CmsSearchField.FIELD_TYPE + ":")) {
+                    String val = fq.substring((CmsSearchField.FIELD_TYPE + ":").length());
+                    val = val.replaceAll("\"", "");
+                    if (OpenCms.getResourceManager().hasResourceType(val)) {
+                        count++;
+                        ret = val;
+                    }
+                }
+            }
+        }
+        return (count == 1) ? ret : null;
+    }
+
     /** The facet date gap to use for date facets. */
     private String m_facetDateGap = DEFAULT_FACET_DATE_GAP;
 
@@ -151,7 +177,7 @@ public class CmsSolrQuery extends SolrQuery {
 
     /**
      * Public constructor.<p>
-     * 
+     *
      * @param cms the current OpenCms context
      * @param queryParams the Solr query parameters
      */
@@ -178,34 +204,8 @@ public class CmsSolrQuery extends SolrQuery {
     }
 
     /**
-     * Returns the resource type if only one is set as filter query.<p>
-     * 
-     * @param fqs the field queries to check
-     * 
-     * @return the type or <code>null</code>
-     */
-    public static String getResourceType(String[] fqs) {
-
-        String ret = null;
-        int count = 0;
-        if (fqs != null) {
-            for (String fq : fqs) {
-                if (fq.startsWith(CmsSearchField.FIELD_TYPE + ":")) {
-                    String val = fq.substring((CmsSearchField.FIELD_TYPE + ":").length());
-                    val = val.replaceAll("\"", "");
-                    if (OpenCms.getResourceManager().hasResourceType(val)) {
-                        count++;
-                        ret = val;
-                    }
-                }
-            }
-        }
-        return (count == 1) ? ret : null;
-    }
-
-    /**
      * Creates and adds a filter query.<p>
-     * 
+     *
      * @param fieldName the field name to create a filter query on
      * @param vals the values that should match for the given field
      * @param all <code>true</code> to combine the given values with 'AND', <code>false</code> for 'OR'
@@ -250,10 +250,107 @@ public class CmsSolrQuery extends SolrQuery {
     }
 
     /**
+     * Creates a filter query on the given field name.<p>
+     *
+     * Creates and adds a filter query.<p>
+     *
+     * @param fieldName the field name to create a filter query on
+     * @param vals the values that should match for the given field
+     * @param all <code>true</code> to combine the given values with 'AND', <code>false</code> for 'OR'
+     * @param useQuotes <code>true</code> to surround the given values with double quotes, <code>false</code> otherwise
+     *
+     * @return a filter query String e.g. <code>fq=fieldname:val1</code>
+     */
+    private String createFilterQuery(String fieldName, List<String> vals, boolean all, boolean useQuotes) {
+
+        String filterQuery = null;
+        if ((vals != null)) {
+            if (vals.size() == 1) {
+                if (useQuotes) {
+                    filterQuery = fieldName + ":" + "\"" + vals.get(0) + "\"";
+                } else {
+                    filterQuery = fieldName + ":" + vals.get(0);
+                }
+            } else if (vals.size() > 1) {
+                filterQuery = fieldName + ":(";
+                for (int j = 0; j < vals.size(); j++) {
+                    String val;
+                    if (useQuotes) {
+                        val = "\"" + vals.get(j) + "\"";
+                    } else {
+                        val = vals.get(j);
+                    }
+                    filterQuery += val;
+                    if (vals.size() > (j + 1)) {
+                        if (all) {
+                            filterQuery += " AND ";
+                        } else {
+                            filterQuery += " OR ";
+                        }
+                    }
+                }
+                filterQuery += ")";
+            }
+        }
+        return filterQuery;
+    }
+
+    /**
+     * Creates a OR combined 'q' parameter.<p>
+     *
+     * @param text
+     *
+     * @return returns the 'q' parameter
+     */
+    private String createTextQuery(String text) {
+
+        if (m_textSearchFields.isEmpty()) {
+            m_textSearchFields.add(CmsSearchField.FIELD_TEXT);
+        }
+        String q = "{!q.op=OR qf=";
+        boolean first = true;
+        for (String textField : m_textSearchFields) {
+            if (!first) {
+                q += " ";
+            }
+            q += textField;
+        }
+        q += "}" + text;
+        return q;
+    }
+
+    /**
+     * Ensures that expired and not yet released resources are not returned by default.<p>
+     *
+     * @param cms the cms context
+     */
+    private void ensureExpiration(CmsObject cms) {
+
+        boolean expirationDateSet = false;
+        boolean releaseDateSet = false;
+        if (getFilterQueries() != null) {
+            for (String fq : getFilterQueries()) {
+                if (fq.startsWith(CmsSearchField.FIELD_DATE_EXPIRED + ":")) {
+                    expirationDateSet = true;
+                }
+                if (fq.startsWith(CmsSearchField.FIELD_DATE_RELEASED + ":")) {
+                    releaseDateSet = true;
+                }
+            }
+        }
+        if (!expirationDateSet) {
+            addFilterQuery(CmsSearchField.FIELD_DATE_EXPIRED + ":[" + getNow(cms) + " TO *]");
+        }
+        if (!releaseDateSet) {
+            addFilterQuery(CmsSearchField.FIELD_DATE_RELEASED + ":[* TO " + getNow(cms) + "]");
+        }
+    }
+
+    /**
      * Ensures that the initial request parameters will overwrite the member values.<p>
-     * 
-     * You can initialize the query with an HTTP request parameter then make some method calls 
-     * and finally re-ensure that the initial request parameters will overwrite the changes 
+     *
+     * You can initialize the query with an HTTP request parameter then make some method calls
+     * and finally re-ensure that the initial request parameters will overwrite the changes
      * made in the meanwhile.<p>
      */
     public void ensureParameters() {
@@ -273,7 +370,52 @@ public class CmsSolrQuery extends SolrQuery {
     }
 
     /**
-    <<<<<<< HEAD
+     * Ensures that at least the 'path' and the 'type' are part of the fields returned field list.<p>
+     *
+     * @see CommonParams#FL
+     */
+    private void ensureReturnFields() {
+
+        String[] fl = getParams(CommonParams.FL);
+        if ((fl != null) && (fl.length > 0)) {
+            List<String> result = new ArrayList<String>();
+            for (String field : fl) {
+                String commasep = field.replaceAll(" ", ",");
+                List<String> list = CmsStringUtil.splitAsList(commasep, ',');
+                if (!list.contains("*")) {
+                    for (String reqField : CmsStringUtil.splitAsList(MINIMUM_FIELDS, ",")) {
+                        if (!list.contains(reqField)) {
+                            list.add(reqField);
+                        }
+                    }
+                }
+                result.addAll(list);
+            }
+            setParam(CommonParams.FL, CmsStringUtil.arrayAsString(result.toArray(new String[0]), ","));
+        }
+    }
+
+    /**
+     * Gets the NOW time part for Solr date queries.
+     *
+     * For example, if a warp time is set, the current time should be the warp time, not the current system time.
+     * If the request time is <code>CmsContextInfo.CURRENT_TIME</code>, then "NOW" is returned.
+     *
+     * @param cms the cms context
+     * @return the current time in respect to the cms context's request time
+     */
+    private String getNow(CmsObject cms) {
+
+        if ((cms != null) && !cms.getRequestContext().getCurrentProject().isOnlineProject()) {
+            if (cms.getRequestContext().getRequestTime() > 0) {
+                return ISO8601_FORMAT.format(new Date(cms.getRequestContext().getRequestTime()));
+            }
+        }
+
+        return "NOW";
+    }
+
+    /**
      * Removes the expiration flag.
      */
     public void removeExpiration() {
@@ -290,8 +432,46 @@ public class CmsSolrQuery extends SolrQuery {
     }
 
     /**
-    =======
-    >>>>>>> branch_9_future
+     * Removes those filter queries that restrict the fields used in the given filter query Strings.<p>
+     *
+     * Searches in the given Strings for a ":", then takes the field name part
+     * and removes the already set filter queries queries that are matching the same field name.<p>
+     *
+     * @param fqs the filter query Strings in the format <code>fq=fieldname:value</code> that should be removed
+     */
+    private void removeFilterQueries(String[] fqs) {
+
+        // iterate over the given filter queries to remove
+        for (String fq : fqs) {
+            int idx = fq.indexOf(':');
+            if (idx != -1) {
+                // get the field name of the fq to remove
+                String fieldName = fq.substring(0, idx);
+                // iterate over the fqs of the already existing fqs from the solr query
+                if (getFilterQueries() != null) {
+                    for (String sfq : getFilterQueries()) {
+                        if (sfq.startsWith(fieldName + ":")) {
+                            // there exists a filter query for exact the same field,  remove it
+                            removeFilterQuery(sfq);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Removes the given filter queries, if already set and then adds the filter queries again.<p>
+     *
+     * @param fqs the filter queries to remove
+     */
+    private void replaceFilterQueries(String[] fqs) {
+
+        removeFilterQueries(fqs);
+        addFilterQuery(fqs);
+    }
+
+    /**
      * Sets the categories only if not set in the query parameters.<p>
      *
      * @param categories the categories to set
@@ -315,9 +495,9 @@ public class CmsSolrQuery extends SolrQuery {
 
     /**
      * Sets date ranges.<p>
-     * 
+     *
      * This call will overwrite all existing date ranges for the given keys (name of the date facet field).<p>
-     * 
+     *
      * The parameter Map uses as:<p>
      * <ul>
      * <li><code>keys: </code>Solr field name {@link org.opencms.search.fields.CmsSearchField} and
@@ -331,7 +511,7 @@ public class CmsSolrQuery extends SolrQuery {
      * whereby date is Solr formated:
      * {@link org.opencms.search.solr.CmsSolrDocument#DF}
      * <p>
-     * 
+     *
      * @param dateRanges the ranges map with field name as key and a CmsPair with min date as first and max date as second
      */
     public void setDateRanges(Map<String, CmsPair<Date, Date>> dateRanges) {
@@ -494,189 +674,5 @@ public class CmsSolrQuery extends SolrQuery {
     public String toString() {
 
         return CmsEncoder.decode(super.toString());
-    }
-
-    /**
-     * Creates a filter query on the given field name.<p>
-     * 
-     * Creates and adds a filter query.<p>
-    <<<<<<< HEAD
-     * 
-     * @param fieldName the field name to create a filter query on
-     * @param vals the values that should match for the given field
-     * @param all <code>true</code> to combine the given values with 'AND', <code>false</code> for 'OR'
-     * @param useQuotes <code>true</code> to surround the given values with double quotes, <code>false</code> otherwise
-     * 
-     * @return a filter query String e.g. <code>fq=fieldname:val1</code>
-     */
-    private String createFilterQuery(String fieldName, List<String> vals, boolean all, boolean useQuotes) {
-
-        String filterQuery = null;
-        if ((vals != null)) {
-            if (vals.size() == 1) {
-                if (useQuotes) {
-                    filterQuery = fieldName + ":" + "\"" + vals.get(0) + "\"";
-                } else {
-                    filterQuery = fieldName + ":" + vals.get(0);
-                }
-            } else if (vals.size() > 1) {
-                filterQuery = fieldName + ":(";
-                for (int j = 0; j < vals.size(); j++) {
-                    String val;
-                    if (useQuotes) {
-                        val = "\"" + vals.get(j) + "\"";
-                    } else {
-                        val = vals.get(j);
-                    }
-                    filterQuery += val;
-                    if (vals.size() > (j + 1)) {
-                        if (all) {
-                            filterQuery += " AND ";
-                        } else {
-                            filterQuery += " OR ";
-                        }
-                    }
-                }
-                filterQuery += ")";
-            }
-        }
-        return filterQuery;
-    }
-
-    /**
-     * Creates a OR combined 'q' parameter.<p>
-     * 
-     * @param text 
-     * 
-     * @return returns the 'q' parameter
-     */
-    private String createTextQuery(String text) {
-
-        if (m_textSearchFields.isEmpty()) {
-            m_textSearchFields.add(CmsSearchField.FIELD_TEXT);
-        }
-        String q = "{!q.op=OR qf=";
-        boolean first = true;
-        for (String textField : m_textSearchFields) {
-            if (!first) {
-                q += " ";
-            }
-            q += textField;
-        }
-        q += "}" + text;
-        return q;
-    }
-
-    /**
-     * Ensures that expired and not yet released resources are not returned by default.<p>
-     *     
-     * @param cms the cms context
-     */
-    private void ensureExpiration(CmsObject cms) {
-
-        boolean expirationDateSet = false;
-        boolean releaseDateSet = false;
-        if (getFilterQueries() != null) {
-            for (String fq : getFilterQueries()) {
-                if (fq.startsWith(CmsSearchField.FIELD_DATE_EXPIRED + ":")) {
-                    expirationDateSet = true;
-                }
-                if (fq.startsWith(CmsSearchField.FIELD_DATE_RELEASED + ":")) {
-                    releaseDateSet = true;
-                }
-            }
-        }
-        if (!expirationDateSet) {
-            addFilterQuery(CmsSearchField.FIELD_DATE_EXPIRED + ":[" + getNow(cms) + " TO *]");
-        }
-        if (!releaseDateSet) {
-            addFilterQuery(CmsSearchField.FIELD_DATE_RELEASED + ":[* TO " + getNow(cms) + "]");
-        }
-    }
-
-    /**
-     * Ensures that at least the 'path' and the 'type' are part of the fields returned field list.<p>
-     * 
-     * @see CommonParams#FL
-     */
-    private void ensureReturnFields() {
-
-        String[] fl = getParams(CommonParams.FL);
-        if ((fl != null) && (fl.length > 0)) {
-            List<String> result = new ArrayList<String>();
-            for (String field : fl) {
-                String commasep = field.replaceAll(" ", ",");
-                List<String> list = CmsStringUtil.splitAsList(commasep, ',');
-                if (!list.contains("*")) {
-                    for (String reqField : CmsStringUtil.splitAsList(MINIMUM_FIELDS, ",")) {
-                        if (!list.contains(reqField)) {
-                            list.add(reqField);
-                        }
-                    }
-                }
-                result.addAll(list);
-            }
-            setParam(CommonParams.FL, CmsStringUtil.arrayAsString(result.toArray(new String[0]), ","));
-        }
-    }
-
-    /**
-     * Removes those filter queries that restrict the fields used in the given filter query Strings.<p>
-     * 
-     * Searches in the given Strings for a ":", then takes the field name part 
-     * and removes the already set filter queries queries that are matching the same field name.<p>
-     * 
-     * @param fqs the filter query Strings in the format <code>fq=fieldname:value</code> that should be removed
-     */
-    private void removeFilterQueries(String[] fqs) {
-
-        // iterate over the given filter queries to remove
-        for (String fq : fqs) {
-            int idx = fq.indexOf(':');
-            if (idx != -1) {
-                // get the field name of the fq to remove
-                String fieldName = fq.substring(0, idx);
-                // iterate over the fqs of the already existing fqs from the solr query
-                if (getFilterQueries() != null) {
-                    for (String sfq : getFilterQueries()) {
-                        if (sfq.startsWith(fieldName + ":")) {
-                            // there exists a filter query for exact the same field,  remove it
-                            removeFilterQuery(sfq);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /**
-     * Removes the given filter queries, if already set and then adds the filter queries again.<p>
-     * 
-     * @param fqs the filter queries to remove
-     */
-    private void replaceFilterQueries(String[] fqs) {
-
-        removeFilterQueries(fqs);
-        addFilterQuery(fqs);
-    }
-
-    /**
-     * Gets the NOW time part for Solr date queries.
-     *
-     * For example, if a warp time is set, the current time should be the warp time, not the current system time.
-     * If the request time is <code>CmsContextInfo.CURRENT_TIME</code>, then "NOW" is returned.
-     *
-     * @param cms the cms context
-     * @return the current time in respect to the cms context's request time
-     */
-    private String getNow(CmsObject cms) {
-
-        if(cms != null && !cms.getRequestContext().getCurrentProject().isOnlineProject()) {
-            if(cms.getRequestContext().getRequestTime() > 0) {
-                return ISO8601_FORMAT.format(new Date(cms.getRequestContext().getRequestTime()));
-            }
-        }
-
-        return "NOW";
     }
 }
