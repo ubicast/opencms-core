@@ -363,11 +363,9 @@ public class CmsDefaultLinkSubstitutionHandler implements I_CmsLinkSubstitutionH
      * @see org.opencms.staticexport.I_CmsLinkSubstitutionHandler#getRootPath(org.opencms.file.CmsObject, java.lang.String, java.lang.String)
      */
     public String getRootPath(CmsObject cms, String targetUri, String basePath) {
-
         String result = getSimpleRootPath(cms, targetUri, basePath);
-        String detailRootPath = getDetailRootPath(cms, result);
-        if (detailRootPath != null) {
-            result = detailRootPath;
+        if (result == null) {
+        	result = getDetailRootPath(cms, targetUri);
         }
         return result;
 
@@ -625,10 +623,22 @@ public class CmsDefaultLinkSubstitutionHandler implements I_CmsLinkSubstitutionH
             if (detailId == null) {
                 return null;
             }
+            String origSiteRoot = cms.getRequestContext().getSiteRoot();
+            try {
+                cms.getRequestContext().setSiteRoot("");
+                // real root paths have priority over detail contents 
+                if (cms.existsResource(result)) {
+                    return null;
+                }
+            } finally {
+                cms.getRequestContext().setSiteRoot(origSiteRoot);
+            }
             CmsResource detailResource = cms.readResource(detailId, CmsResourceFilter.ALL);
             return detailResource.getRootPath() + getSuffix(uri);
         } catch (Exception e) {
-            LOG.error(e.getLocalizedMessage(), e);
+            if (LOG.isWarnEnabled()) {
+                LOG.warn(e.getLocalizedMessage(), e);
+            }
             return null;
         }
     }
